@@ -71,6 +71,7 @@
             self.scanReader.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
         }
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 110000
         // Hack to hide the bottom bar's Info button... originally based on http://stackoverflow.com/a/16353530
 	NSInteger infoButtonIndex;
         if ([[[UIDevice currentDevice] systemVersion] compare:@"10.0" options:NSNumericSearch] != NSOrderedAscending) {
@@ -80,6 +81,7 @@
         }
         UIView *infoButton = [[[[[self.scanReader.view.subviews objectAtIndex:2] subviews] objectAtIndex:0] subviews] objectAtIndex:infoButtonIndex];
         [infoButton setHidden:YES];
+#endif
 
         UIButton *cancelButton = [[[[[[[self.scanReader.view.subviews objectAtIndex:2] subviews] objectAtIndex:0] subviews] objectAtIndex:infoButtonIndex-1] subviews] objectAtIndex:0];
         [cancelButton setTitle:@"Finished" forState:UIControlStateNormal];
