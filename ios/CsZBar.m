@@ -83,9 +83,6 @@
         [infoButton setHidden:YES];
 #endif
 
-        UIButton *cancelButton = [[[[[[[self.scanReader.view.subviews objectAtIndex:2] subviews] objectAtIndex:0] subviews] objectAtIndex:infoButtonIndex-1] subviews] objectAtIndex:0];
-        [cancelButton setTitle:@"Finished" forState:UIControlStateNormal];
-
         //UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem]; [button setTitle:@"Press Me" forState:UIControlStateNormal]; [button sizeToFit]; [self.view addSubview:button];
         CGRect screenRect = [[UIScreen mainScreen] bounds];
         CGFloat screenWidth = screenRect.size.width;
