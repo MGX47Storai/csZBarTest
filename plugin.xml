@@ -50,19 +50,6 @@
         <!-- I changed from a source-file to lib-file. Seems to work on cordova-android 6 & 7. -->
         <lib-file src="android/libs/zbar.jar"/>
 
-        <!-- changed source-file to resource-file and used target instead of target-dir (works better with cordova-android 7) -->
-        <resource-file src="android/libs/zbar.jar" target="libs/zbar.jar" />
-        <resource-file src="android/libs/armeabi/libiconv.so" target="libs/armeabi/libiconv.so" />
-        <resource-file src="android/libs/armeabi/libzbarjni.so" target="libs/armeabi/libzbarjni.so" />
-        <resource-file src="android/libs/armeabi-v7a/libiconv.so" target="libs/armeabi-v7a/libiconv.so" />
-        <resource-file src="android/libs/armeabi-v7a/libzbarjni.so" target="libs/armeabi-v7a/libzbarjni.so" />
-        <resource-file src="android/libs/arm64-v8a/libiconv.so" target="libs/arm64-v8a/libiconv.so" />
-        <resource-file src="android/libs/arm64-v8a/libzbarjni.so" target="libs/arm64-v8a/libzbarjni.so" />
-        <resource-file src="android/libs/x86/libiconv.so" target="libs/x86/libiconv.so" />
-        <resource-file src="android/libs/x86/libzbarjni.so" target="libs/x86/libzbarjni.so" />
-        <resource-file src="android/libs/x86_64/libiconv.so" target="libs/x86_64/libiconv.so" />
-        <resource-file src="android/libs/x86_64/libzbarjni.so" target="libs/x86_64/libzbarjni.so" />
-
         <!-- cordova-android 7 directives (hopefully ignored by cordova-android 6) -->
         <resource-file src="android/libs/zbar.jar" target="jniLibs/zbar.jar" />
         <resource-file src="android/libs/armeabi/libiconv.so" target="jniLibs/armeabi/libiconv.so" />
