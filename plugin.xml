@@ -73,6 +73,8 @@
         <resource-file src="android/libs/arm64-v8a/libzbarjni.so" target="jniLibs/arm64-v8a/libzbarjni.so" />
         <resource-file src="android/libs/x86/libiconv.so" target="jniLibs/x86/libiconv.so" />
         <resource-file src="android/libs/x86/libzbarjni.so" target="jniLibs/x86/libzbarjni.so" />
+        <resource-file src="android/libs/x86_64/libiconv.so" target="jniLibs/x86_64/libiconv.so" />
+        <resource-file src="android/libs/x86_64/libzbarjni.so" target="jniLibs/x86_64/libzbarjni.so" />
 
         <!-- For cordova-android 7.x -->
         <resource-file src="android/ZBarcodeFormat.java" target="java/org/cloudsky/cordovaPlugins/ZBarcodeFormat.java" />
